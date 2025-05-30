@@ -1,0 +1,56 @@
+{
+  "headless": true,
+  "implicit_wait": 10,
+  "log_level": "INFO",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+  "output": {
+    "file": "news_articles.json",
+    "format": "json"
+  },
+  "sites": [
+    {
+      "name": "架空ニュースサイト",
+      "url": "https://example-news.com/",
+      "initial_wait": 3,
+      "actions": [],
+      "extraction": {
+        "items": {
+          "selector": ".news-item",
+          "fields": {
+            "headline": {
+              "selector": ".news-title",
+              "type": "text",
+              "default": "見出し不明"
+            },
+            "summary": {
+              "selector": ".news-summary",
+              "type": "text",
+              "default": "概要不明"
+            },
+            "category": {
+              "selector": ".news-category",
+              "type": "text",
+              "default": "カテゴリ不明"
+            },
+            "article_link": {
+              "selector": ".news-link",
+              "type": "attribute",
+              "attribute": "href",
+              "default": ""
+            },
+            "publish_date": {
+              "selector": ".news-date",
+              "type": "text",
+              "default": "日時不明"
+            },
+            "author": {
+              "selector": ".news-author",
+              "type": "text",
+              "default": "著者不明"
+            }
+          }
+        }
+      }
+    }
+  ]
+} 

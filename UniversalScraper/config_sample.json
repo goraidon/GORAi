@@ -1,0 +1,67 @@
+{
+  "headless": true,
+  "implicit_wait": 10,
+  "log_level": "INFO",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+  "window_size": [1920, 1080],
+  "chrome_options": [
+    "--disable-blink-features=AutomationControlled",
+    "--disable-notifications"
+  ],
+  "output": {
+    "file": "scraped_data.csv",
+    "format": "csv"
+  },
+  "sites": [
+    {
+      "name": "サンプルサイト",
+      "url": "https://example.com/",
+      "initial_wait": 3,
+      "wait_after": 2,
+      "actions": [
+        {
+          "type": "input",
+          "selector": {
+            "by": "id",
+            "value": "search-field"
+          },
+          "value": "検索キーワード",
+          "timeout": 10,
+          "wait_after": 2
+        },
+        {
+          "type": "click",
+          "selector": {
+            "by": "class_name",
+            "value": "search-btn"
+          },
+          "timeout": 10,
+          "wait_after": 5
+        }
+      ],
+      "extraction": {
+        "items": {
+          "selector": ".result-item",
+          "fields": {
+            "title": {
+              "selector": ".item-title",
+              "type": "text",
+              "default": "タイトル不明"
+            },
+            "description": {
+              "selector": ".item-desc",
+              "type": "text",
+              "default": "説明不明"
+            },
+            "url": {
+              "selector": ".item-link",
+              "type": "attribute",
+              "attribute": "href",
+              "default": ""
+            }
+          }
+        }
+      }
+    }
+  ]
+} 

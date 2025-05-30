@@ -1,0 +1,56 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# 出力ファイル（サンプル設定ファイルは除外しない）
+*.csv
+*.xlsx
+scraped_*.json
+results_*.json
+data_*.json
+output_*.json
+output/
+logs/
+scraped_data.*
+
+# 環境設定
+.env
+.venv
+env/
+venv/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# OS
+.DS_Store
+Thumbs.db
+
+# ChromeDriver
+chromedriver
+chromedriver.exe
+
+# 一時ファイル
+*.tmp
+*.temp 

@@ -1,0 +1,70 @@
+{
+  "headless": false,
+  "implicit_wait": 10,
+  "log_level": "INFO",
+  "user_agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36",
+  "output": {
+    "file": "ecommerce_products.csv",
+    "format": "csv"
+  },
+  "sites": [
+    {
+      "name": "架空ECサイト商品検索",
+      "url": "https://example-shop.com/",
+      "initial_wait": 3,
+      "actions": [
+        {
+          "type": "input",
+          "selector": {
+            "by": "id",
+            "value": "search-input"
+          },
+          "value": "商品キーワード",
+          "wait_after": 2
+        },
+        {
+          "type": "click",
+          "selector": {
+            "by": "class_name",
+            "value": "search-button"
+          },
+          "wait_after": 5
+        }
+      ],
+      "extraction": {
+        "items": {
+          "selector": ".product-item",
+          "fields": {
+            "name": {
+              "selector": ".product-title",
+              "type": "text",
+              "default": "商品名不明"
+            },
+            "price": {
+              "selector": ".price",
+              "type": "text",
+              "default": "価格不明"
+            },
+            "rating": {
+              "selector": ".rating",
+              "type": "text",
+              "default": "評価なし"
+            },
+            "image_url": {
+              "selector": ".product-image img",
+              "type": "attribute",
+              "attribute": "src",
+              "default": ""
+            },
+            "product_link": {
+              "selector": ".product-link",
+              "type": "attribute",
+              "attribute": "href",
+              "default": ""
+            }
+          }
+        }
+      }
+    }
+  ]
+} 
