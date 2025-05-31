@@ -1,11 +1,11 @@
-# GORAi のデジタル本棚
+# 注意文
 ## Amazonリンクは、Amazonアソシエイトとして使用しているリンクです
 - このAmazonリンク経由で購入するとGORAiに数%の収益が入ります。
 - なんだか気に入らない方は商品名をAmazonで探し購入してください。
 
 ---
 
-### 岩波文庫
+# 岩波文庫
 - [孫子](https://amzn.to/4dEa6RM)
 - [ツァラトゥストラはこう言った（上）](https://amzn.to/4kBIuyW)
 - [ツァラトゥストラはこう言った（下）](https://amzn.to/44UYE1E)
@@ -15,7 +15,7 @@
 
 ---
 
-### AI・データサイエンス
+# AI・データサイエンス
 - [AI・データ分析プロジェクトのすべて](https://amzn.to/4kcsqDJ)
 - [統計学入門](https://amzn.to/44Q4DEZ)
 - [分析モデル入門](https://amzn.to/4dJGvpV)
@@ -47,20 +47,20 @@
 
 ---
 
-### 学術
+# 学術
 - [ゲーム理論](https://amzn.to/4kAYHUO)
 - [データサイエンス教本](https://amzn.to/3SI79WJ)
 
 ---
 
-### 株式投資
+# 株式投資
 - [株式投資の未来](https://amzn.to/4kxEuiC)
 - [億万長者をめざすバフェットの銘柄選択術](https://amzn.to/4jqr5Iu)
 - [バフェットの財務諸表を読む力](https://amzn.to/3Z4PHzb)
 - [麗しのバフェット銘柄](https://amzn.to/3Z1viuT)
 - [粉飾決算の見分け方](https://amzn.to/4k7GDBW)
 
-### トレード
+# トレード
 - [ゾーン](https://amzn.to/4kBsVqS)
 - [デイトレード](https://amzn.to/4jgXcu9)
 - [マーケットの魔術師](https://amzn.to/3Zzg408)
@@ -72,14 +72,14 @@
 
 ---
 
-### 小説
+# 小説
 - 騎士団長殺し :第1部 顕れるイデア編
 - 騎士団長殺し :第2部 遷ろうメタファー編
 - 街とその不確かな壁
 
 ---
 
-### ノウハウ本
+# ノウハウ本
 - [調べる技術](https://amzn.to/4ka2yZb)
 - [コピーライティング技術大全](https://amzn.to/3SpKr5r)
 - [外資系コンサルのスライド作成術](https://amzn.to/4jwax1S)
