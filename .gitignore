@@ -1,3 +1,9 @@
+# inputs
+inputs/
+
+# outputs
+outputs/
+
 # OS generated files
 .DS_Store
 .DS_Store?
